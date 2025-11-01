@@ -14,7 +14,7 @@ run_test() {
   echo "$description"
   echo "-----------------------------------------------------------------------"
 
-  yarn workspace my-app start 2>&1 | grep -E "(Color Support Available|SUCCESS|WARNING|Debug output|Error:)" || true
+  yarn workspace my-app start 2>&1 | grep -E "(my-library:main|Color Support Available|SUCCESS|WARNING|Debug output|Error:)" || true
 
   echo ""
 }
