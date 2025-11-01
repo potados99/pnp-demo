@@ -1,0 +1,17 @@
+{
+  "name": "pnp-demo",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "packages/my-library",
+    "packages/my-app"
+  ],
+  "packageManager": "yarn@4.10.3",
+  "scripts": {
+    "demo:with-fix": "echo '=== WITH packageExtensions ===' && yarn workspace my-app start",
+    "demo:without-fix": "echo '=== WITHOUT packageExtensions (will show warnings) ===' && yarn workspace my-app start"
+  },
+  "devDependencies": {
+    "corepack": "^0.34.1"
+  }
+}
