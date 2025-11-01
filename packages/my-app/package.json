@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "./index.js",
   "scripts": {
-    "start": "DEBUG='my-library:*' node index.js"
+    "start": "DEBUG=\"my-library:*\" node index.js"
   },
   "dependencies": {
     "my-library": "workspace:*"
